@@ -1,0 +1,296 @@
+.Copyright a
+{
+    font-size:15px ;
+    color: #ccc;
+    border-bottom: 1px solid #b426ec;
+}
+.Copyright
+{
+    margin-top: 30px;
+    margin-bottom: 9px;
+}
+
+.button
+{
+    display: none;
+}
+ul li a
+{
+    color: #000;
+}
+
+ul li a:hover
+{
+    
+   
+    letter-spacing: 3px;
+    transition: 0.5s;
+}
+
+
+@media(max-width:1309px)
+{
+    .header
+    {
+        width: 100%;
+    }
+    .main
+    {
+        flex-direction: column-reverse;
+        align-content: space-around;
+    }
+    .offre
+    {
+        flex-direction: column;
+        align-content: space-between;
+    }
+}
+
+@media(max-width:600px)
+{
+    body
+    {
+        width: 100%;
+    }
+    .header
+    {
+        width: 100%;
+        justify-content: flex-start;
+        padding:10px 15px;
+       
+    }
+
+    .nom
+    {
+        font-size: 20px;
+        color:  #d49725;
+    }
+    .logo img
+    {
+        
+        width: 30px;
+        height: 30px;
+        
+    }
+    /* .menu ul
+    {
+        display: none;
+    } */
+    .image
+    {
+        width:300px;
+        height: 200px;
+    }
+    .text
+    {
+        margin-top: 40px;
+        width: 300px;
+    }
+    .deserve,.delice,.hot
+    {
+        font-size: 40px;
+    }
+    .offres .trait
+    {
+        width: 230px;
+    }
+    .crepes_sucrees
+    {
+     
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-width: 300px;
+    }
+    .nature_button, .chocolat_button, .raisin_button
+    {
+        margin-bottom: 15px;
+        width: 200px;
+        justify-content: center;
+    }
+    .crepes_salees
+    {
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-width: 300px;
+    }
+    .jambon_button, .poulet_button, .viande_button
+    {
+        margin-bottom: 15px;
+        width: 200px;
+        justify-content: center;
+    }
+    .cointain
+    {
+        width: 300px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .offre2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+    /* .liste_produits
+    {
+        margin-left: 10px;
+    } */
+    .liste_produits li
+    {
+        list-style-type:none ;
+        margin-bottom: 10px;
+        width: 300px;
+    }
+
+    .commander
+    {
+        text-align: left;
+        margin: 0 auto;
+        width: 200px;
+    }
+
+    .commander a
+    {
+        padding:12px 47px;
+    }
+
+
+    .nosservices
+    {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .formation
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .imgFormation img
+    {
+        width: 300px;
+        height: 200px;
+    }
+    .titreService
+    {
+        font-size: 18px;
+        
+    }
+}
+
+@media screen and (max-width:600px)
+{
+    .liste_produits
+{
+    margin: auto;
+    width: 300px;
+}
+    ul li a
+{
+    color: #d49725;
+}
+    ul li 
+{
+    padding: 5px 10px;
+    background-color: #000;
+    
+    border-radius: 20px;
+    transition: 0.5s;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+    .logo
+    {
+        z-index: 20px;
+    }
+    body 
+    {
+        position: relative;
+    }
+    .header
+    {
+        padding: 20px 9px;
+    }
+    .menu ul 
+    {
+        flex-direction: column;
+        position: absolute;
+        /* justify-content: space-around;   */
+        /* align-content: space-between; */
+        /* top: -1550px; */
+        top: 80px;
+        left: -1500px;
+        /* display: none; */
+        background-color: #f5d7a1;
+        height: 50vh;
+        width: 40%;
+        margin: 0px ;
+        border-radius: 9px;
+        align-items: center;
+        /* justify-content: center; */
+        transition: 0.9s;
+        z-index: 9;
+    }
+    .menu ul li 
+    {
+        margin-bottom: 20px ;
+        
+    }
+    .menu ul li a 
+    {
+        font-size: 15px;
+    }
+    .menu2.active  
+    {
+        left: 0px;
+        /* top: 0; */
+    }
+    .button
+    {
+        width: 50px;
+        display: block;
+        height: 50px;
+        /* background-color: brown; */
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .button::after
+    {
+        content: "";
+        width: 35px;
+        position: absolute;
+        height: 3px;
+        background-color: #000;
+        box-shadow: 0 10px 0 #000;
+        transform: translateY(-10px);
+        
+    }
+    .button::before
+    {
+        content: "";
+        width: 35px;
+        position: absolute;
+        height: 3px;
+        background-color: #000;
+        transform: translateY(10px);
+        
+    }
+    .button.active::after
+    {
+        box-shadow: 0 0 0 #000;
+        transform: rotate(45deg);
+        transition: 0.9s;
+    }
+    .button.active::before
+    {
+        transform: rotate(-45deg);
+        transition: 0.9s;
+    }
+}

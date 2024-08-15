@@ -1,0 +1,60 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('images/jambon.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+.btnCommander
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    width: 200px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: rgb(22, 243, 22);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Verdana,  Tahoma, sans-serif;
+    animation: hautEtBas 5s infinite;
+}
+@keyframes hautEtBas {
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+    40%{
+        transform: translateY(0px);
+    }
+    60%
+    {
+        transform: translateY(-20px);
+    }
+    80%
+    {
+        transform: translateY(0px);
+    }
+    100%
+    {
+        transform: translateY(-20px);
+    }
+    
+}
+
